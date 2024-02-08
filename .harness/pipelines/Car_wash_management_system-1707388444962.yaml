@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_yashwanth2108_Car_wash_management_system_1707388450986
+  name: Build Car_wash_management_system
+  orgIdentifier: default
+  projectIdentifier: Demo
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1701413525246
+        repoName: yashwanth2108/Car_wash_management_system
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
