@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_yashwanth2108_Car_wash_management_system_1707388450986-pr-trigger-input-set
+  identifier: Build_yashwanth2108_Car_wash_management_system_1707388450986prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Demo
+  pipeline:
+    identifier: Build_yashwanth2108_Car_wash_management_system_1707388450986
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
